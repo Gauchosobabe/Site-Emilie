@@ -1,0 +1,193 @@
+* 
+{margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+} 
+.navbar2 {
+    position: absolute;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    align-items: center;
+    background-color: blue;
+}
+.navbar2 a {
+    color: beige;
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar2 .logo {
+    font-size: 3em;
+    color: crimson;
+    font-weight: bold;
+}
+.nav-links ul {
+    display: flex;
+}
+.nav-links ul li {
+    font-size: 10px;
+    margin: 0 50px;
+}
+.navbar2 .menu-hamburger {
+    width: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: none;
+}
+.mobile-menu {
+    margin-left: 0;
+}
+.insta{
+  position: absolute;
+  top: 11px;
+  right: 600px;
+}
+#precedent, #suivant {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.nav-links2:hover #precedent, .nav-links2:hover #suivant {
+    opacity: 1;
+   
+}
+#precedent {
+    font-size: 50px;  
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+#suivant {
+    font-size: 50px;  
+    position: absolute;
+    top: 40%;
+    right: 0%;}
+
+#slide {
+    top: 50px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.navbar3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 70px;
+    width: 34%;
+    height: 50%;
+}
+.nav-links2 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+.mesanimaux {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+.contenu {
+    position: absolute;
+    top: 70px;
+    width: 100vw;
+}
+.gallerie {
+    display: flex;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+}
+.gallerie::-webkit-scrollbar {
+    display: block;
+}
+.carte {
+scroll-snap-align: start;
+border-radius: 30px;
+min-height: 200px;
+min-width: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+.contenu {
+    position: absolute;
+    top: 70px;
+    width: 100vw;
+}
+.gallerie {
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y: auto;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+.gallerie::-webkit-scrollbar {
+    display: none;
+}
+.carte {
+scroll-snap-align: start;
+border-radius: 30px;
+min-height: 200px;
+min-width: 300px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.navbar3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 70px;
+    width: 34%;
+    height: 25%;
+}
+.nav-links2 {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+}
+.mesanimaux {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+}
+#slide {
+    top: 0%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+}
+
+
+
+
+

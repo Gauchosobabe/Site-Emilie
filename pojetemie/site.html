@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="fr"> 
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewpport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <p class="logo">Mzlle Emie Photographies</p>
+       <div class="nav-links">
+            <ul>
+                <li><a href="../pojetemie/moi.html">A propos de moi</a></li>
+                <li><a href="../pojetemie/mesphotos.html">Mes photos</a></li>
+            </ul>
+       </div>
+       <img src="../pojetemie/images/burger-bar.png" alt="menu-hamburger" class="menu-hamburger">
+       <a href="https://www.instagram.com/mzlle.emie.photographies/?igsh=N2dibjNydXk1eWZy" class="insta"><img src="../pojetemie/images/insta.png" alt="Lien instagram"></a>
+       
+    </nav>
+    <form action="contact.php" method="post">
+        <h1>Contactez-moi</h1>
+        <div class="separation"></div>
+        <div class="corps-formulaire">
+            <div class="gauche">
+                <div class="groupe">
+                    <label>Votre nom/prénom</label>
+                    <input type="text" name="nom" required>  
+                    <i class="fa-solid fa-user"></i>          
+                </div>           
+            
+                <div class="groupe">
+                    <label>Votre email</label>
+                    <input type="text" name="email" required>   
+                    <i class="fa-solid fa-at"></i>         
+                </div>
+                <div class="groupe">
+                    <label>Votre téléphone</label>
+                    <input type="text" name="telephone" required>   
+                    <i class="fa-solid fa-phone"></i>        
+                </div>
+            </div>
+            <div class="droite">
+                <div class="groupe">
+                    <label>Message</label>
+                   <textarea name="message" required></textarea>
+                   </div>
+             </div>
+            
+        </div>
+        <div class="pied-formulaire">
+            <input type="submit" class="bouton" value="Envoyer" name="submit">
+        </div>
+    </form>
+   
+</body>
+   <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+   </script>
+

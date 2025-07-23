@@ -1,0 +1,7 @@
+if (isset($_POST["nom"])) if (isset($_POST["email"])) if (isset($_POST["telephone"])) if (isset($_POST["message"])) {
+        if (empty($_POST["nom"])) if (empty($_POST["email"])) if (empty($_POST["telephone"])) if (empty($_POST["message"])) {
+         $nom = htmlspecialchars($_POST["nom"]) 
+         $email = htmlspecialchars($_POST["email"])  
+         $telephone = htmlspecialchars($_POST["telephone"])  
+         $message = htmlspecialchars($_POST["message"])    
+        }
