@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="fr"> 
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewpport" content="width=device-width">
+    <script src="../pojetemie/slider1.js"></script>
+</head>
+<body>
+
+    <nav class="navbar2"> 
+        <a href="index.html" class="logo">Accueil</a>
+        
+       <div class="nav-links">
+            <ul>
+                <li><a href="../pojetemie/moi.html">A propos de moi</a></li>
+            </ul>
+       </div>
+       <img src="../pojetemie/images/burger-bar.png" alt="menu-hamburger" class="menu-hamburger" >
+       <a href="https://www.instagram.com/mzlle.emie.photographies/?igsh=N2dibjNydXk1eWZy" class="insta"><img src="../pojetemie/images/insta.png" alt="Lien instagram"></a>
+    </nav>
+  
+
+    <header>
+         
+    </header>
+     <nav class="navbar3">
+        <div class="nav-links2">
+            <img src="../pojetemie/images/lampadaire.jpg" id="slide" alt="">
+            <div class="btn" id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
+            <div class="btn" id="suivant" onclick="ChangeSlide(1)"> &gt;</div>
+            <ul>
+                <li><a href="../pojetemie/Mesanimaux.html" class="mesanimaux">Mes animaux</a></li>
+
+           
+             
+            </ul>
+        </div>
+      
+    </nav>
+</body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+   </script>
+  
