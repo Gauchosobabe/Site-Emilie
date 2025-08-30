@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    position: relative;
+}
+
+.navbar{
+position: absolute;
+display: flex;
+top: 0px;
+left: 50vw;
+width: 50vw;
+height: 50px;
+color: aliceblue;
+font-weight: bold;
+}
+ul{
+position: absolute;
+left: 0vw;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+font-size: 20px;
+list-style-type: none;
+width: 50vw;
+}
+ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+ul li {
+
+}
+.hamburger{
+    width: 50px;
+    display: none;
+}
+.bienvenue{
+    position: absolute;
+    height: 70px;
+}
+.utilisateur{
+    position: absolute;
+    left: 53vw;
+    width: 25px;
+    height: 25px;
+    top: 1px;
+}
+.utilisateur img{
+    width: 100%;
+}

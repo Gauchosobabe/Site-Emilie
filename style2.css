@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url(image/fond5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    position: relative;
+    width: 100vw;
+    height: 30px;
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 5px 5px #000000;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sinscrire{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    display: flex;
+    border: solid aliceblue 2px;
+    width: 500px;
+    height: 600px;
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    box-shadow: 2px 5px 5px #000000;
+}
+
+p{
+    color: aliceblue;
+    font-size: 30px;
+    position: absolute;
+    top: 80%;
+    left: 70%;
+}
+.formulaire{
+    position: absolute;
+    top: 0;
+    display: flex;
+    height: 80%;
+    width: 100%;
+    color: aliceblue;
+    justify-content: center;
+    filter: none;
+    flex-direction: column;
+    align-items: center;  
+}
+h1{
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: 2px 5px 5px #000000;
+    justify-content: center;
+}
+.envoyer{
+    position: absolute;
+    top: 90%;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background: linear-gradient(purple,blue,cyan,green,yellow,orange,red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation : rotate 2s linear infinite;
+    
+}
+@keyframes rotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    background-color: black;
+    animation: unrotate 2s linear infinite;
+}
+@keyframes unrotate{
+    0% {
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }}
+.email{
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 5px 5px #000000;
+    justify-content: center;
+    align-items: center;
+}
+.mail{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    height: 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.password{
+    background-color: transparent;
+    border-bottom: 2px;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    height: 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.mdp{
+    position: absolute;
+    top: 55%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    background-color: transparent;
+    text-shadow: 2px 5px 5px #000000;
+}
+.cpassword{
+    background-color: transparent;
+    border-bottom: 2px;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    height: 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.cmdp{
+    position: absolute;
+    top: 70%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    background-color: transparent;
+    text-shadow: 2px 5px 5px #000000;
+}
+.cpseudo{
+    background-color: transparent;
+    border-bottom: 2px;
+    border: none;
+    border-bottom: 2px solid aliceblue;
+    height: 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.pseudo{
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    background-color: transparent;
+    text-shadow: 2px 5px 5px #000000;
+}
+.mail::placeholder, .password::placeholder, .cpseudo::placeholder{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 5px 5px #000000;
+}
+.cpassword::placeholder{
+    color: aliceblue;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow: 2px 5px 5px #000000;
+}
+.mail:focus,
+.password:focus,
+.cpseudo:focus,
+.cpassword:focus {
+    outline: none; 
+    border-bottom: 2px solid cyan; 
+    transition: border-bottom 0.3s ease-in-out; 
+}
+.mail:focus::placeholder,
+.password:focus::placeholder,
+.cpseudo:focus::placeholde,
+.cpassword:focus::placeholde {
+  color: transparent;
+}
+.success-message{
+    color: rgb(4, 202, 14);
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 35vw;
+    font-size: 30px;
+    text-shadow: 2px 5px 5px #000000;
+}
